@@ -53,38 +53,52 @@
                                 <div class="col-md-12 mb-2">
                                     <input type="tel" class="form-control" name="tele" placeholder="Telephone" required>
                                 </div>
-                            <div class="col-md-12  mb-2">
-                                <input type="number" class="form-control" name="annee_experience" placeholder="Annee experience" required>
-                            </div>
-                            <div class="col-md-12  mb-2">
-                                <input type="text" class="form-control" name="poste" placeholder="Poste" required>
-                            </div>
-                            <div class="col-md-12  mb-2">
-                                <select name="etudes" class="form-control" style="padding: 10px 15px">
-                                    <option disabled selected>etudes</option>
-                                    <option value="bac +5">Bac +5</option>
-                                    <option value="bac +4">Bac +4</option>
-                                    <option value="bac +3">Bac +3</option>
-                                    <option value="bac +2">Bac +2</option>
-                                    <option value="bac +1">Bac +1</option>
-                                    <option value="bac">Bac</option>
-                                  </select>
-                            </div>
-                            <div class="col-md-12  mb-2">
-                                <input type="file" class="form-control" accept = ".pdf" name="cv" placeholder="file" required>
-                            </div>
-                            @if ($errors->any())
-                                <div class="text-success">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
+
+                                <div class="col-md-12  mb-2">
+                                    <input type="number" class="form-control" name="annee_experience" placeholder="Annee experience" required>
                                 </div>
-                            @endif
-                            <div class="mt-5">
-                                <button type="submit">Envoyer</button>
-                            </div>
+
+                                {{-- <div class="col-md-12  mb-2">
+                                    <input type="text" class="form-control" name="poste" placeholder="Poste" required>
+                                </div> --}}
+
+                                <div class="col-md-12  mb-2">
+                                    <select name="poste" class="form-control" style="padding: 10px 15px" required>
+                                        <option disabled selected>Emploi</option>
+                                        <option value="stage">Stage</option>
+                                        <option value="emploi">Emploi</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-12  mb-2">
+                                    <select name="etudes" class="form-control" style="padding: 10px 15px" required>
+                                        <option disabled selected>Etudes</option>
+                                        <option value="bac +5">Bac +5</option>
+                                        <option value="bac +4">Bac +4</option>
+                                        <option value="bac +3">Bac +3</option>
+                                        <option value="bac +2">Bac +2</option>
+                                        <option value="bac +1">Bac +1</option>
+                                        <option value="bac">Bac</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-12  mb-2">
+                                    <input type="file" class="form-control" accept = ".pdf" name="cv" placeholder="file" required>
+                                </div>
+
+                                @if ($errors->any())
+                                    <div class="text-success">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+                                <div class="mt-5">
+                                    <button type="submit">Envoyer</button>
+                                </div>
                             </div>
                         </form>
                     </div><!-- End Quote Form -->

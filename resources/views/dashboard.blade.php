@@ -31,7 +31,7 @@
                 <a href="{{route('showVisitor')}}">
                     <div class="card info-card sales-card" >
                         <div class="card-body">
-                            <h5 class="card-title">Les visiteurs</h5>
+                            <h5 class="card-title">Les condidatures</h5>
                             <div class="d-flex align-items-center">
                             <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                 <i class="fa-solid fa-users"></i>
@@ -70,7 +70,7 @@
                 <a href="{{route('showSoftdelete')}}">
                     <div class="card info-card revenue-card">
                         <div class="card-body">
-                            <h5 class="card-title">Les visiteurs supprimer</h5>
+                            <h5 class="card-title">Les condidatures supprimer</h5>
                             <div class="d-flex align-items-center">
                             <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                 <i class="fa-solid fa-users"></i>

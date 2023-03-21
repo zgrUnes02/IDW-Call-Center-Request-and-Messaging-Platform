@@ -41,9 +41,7 @@
               <div class="icon"><img src="{{asset('/images/service2.jpeg')}}" class="img-fluid" alt=""></div>
               <h4><a href="">Système de gestion des appels</a></h4>
               <p>
-                un système de gestion des appels permet de gérer efficacement le flux des appels entrants et sortants. 
-                Il peut également fournir des informations sur les appels, telles que la durée de l'appel, 
-                le temps d'attente, le temps de réponse et plus encore.
+                Offrez à vos clients un accueil téléphonique convivial et professionnel.
               </p>
             </div>
           </div>
@@ -53,9 +51,7 @@
               <div class="icon"><img src="{{asset('/images/service2.jpeg')}}" class="img-fluid" alt=""></div>
               <h4><a href="">Logiciel de centre d'appels</a></h4>
               <p>
-                un logiciel de centre d'appels est conçu pour aider à gérer les interactions avec les clients. 
-                Il peut inclure des fonctionnalités telles que des scripts de conversation, 
-                des options de routage des appels, des analyses des performances des agents et bien plus encore.
+                Bénéficiez d’un script d’accueil professionnel et répondant à vos exigences.
               </p>
             </div>
           </div>
@@ -65,10 +61,7 @@
               <div class="icon"><img src="{{asset('/images/service2.jpeg')}}" class="img-fluid" alt=""></div>
               <h4><a href="">Service de numérotation en masse</a></h4>
               <p>
-                si vous avez besoin d'appeler un grand nombre de clients, 
-                un service de numérotation en masse peut être très utile. 
-                Cela vous permettra de composer plusieurs numéros à la fois, 
-                ce qui vous fera économiser du temps et de l'énergie.
+                Identifiez les zones d’insatisfaction et prenez en charge les remontées de vos clients : un client mécontent pris en charge est plus prescripteur qu’un client lambda.
               </p>
             </div>
           </div>
@@ -76,10 +69,9 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><img src="{{asset('/images/service2.jpeg')}}" class="img-fluid" alt=""></div>
-              <h4><a href="">Service d'analyse de la voix du client</a></h4>
+              <h4><a href="">Service d'analyse</a></h4>
               <p>
-                ce service utilise l'intelligence artificielle pour analyser les appels et détecter les tendances et les problèmes fréquents. 
-                Il peut également fournir des informations sur la satisfaction des clients, la qualité des appels et bien plus encore.
+                Des solutions techniques expertes à moindre coût : CRM, DATA analyse.
               </p>
             </div>
           </div>

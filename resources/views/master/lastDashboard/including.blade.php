@@ -126,7 +126,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('dashboard')}}">
           <i class="fa-solid fa-house"></i>
-          <span>Accueil</span>
+          <span>Dashboard</span>
         </a>
       </li>
       <!-- End Dashboard Nav -->
@@ -135,7 +135,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('showVisitor')}}">
           <i class="fa-solid fa-users"></i>
-          <span>Les visiteurs</span>
+          <span>Les condidatures</span>
         </a>
       </li>
       <!-- End Profile Page Nav -->
@@ -159,7 +159,7 @@
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
               <li>
                 <a href="{{route('showSoftdelete')}}">
-                  <i class="fa-solid fa-circle"></i><span>Les visiteurs supprimer</span>
+                  <i class="fa-solid fa-circle"></i><span>Les condidatures supprimer</span>
                 </a>
               </li>
               <li>

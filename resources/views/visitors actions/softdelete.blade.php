@@ -2,7 +2,7 @@
 @extends('master.lastDashboard.including')
 
 @section('title-2')
-    Les visiteurs supprimer
+    Les condidatures supprimer
 @endsection
 
 @section('content-dahboard')
@@ -24,7 +24,7 @@
 {{--! ---------------------------------------------------------------------------------------------------- --}}
 
     <div class="pagetitle">
-      <h1>Les visiteurs supprimer</h1>
+      <h1>Les condidatures supprimer</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Accueil</a></li>
@@ -47,7 +47,7 @@
                     <th scope="col">Nom</th>
                     <th scope="col">Email</th>
                     <th scope="col">Telephone</th>
-                    <th scope="col">Titre</th>
+                    <th scope="col">Type</th>
                     <th scope="col">Etudes</th>
                     <th scope="col">Annee experience</th>
                     <th scope="col">Processe</th>

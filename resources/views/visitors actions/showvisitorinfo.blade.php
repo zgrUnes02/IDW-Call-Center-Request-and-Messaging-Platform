@@ -18,7 +18,7 @@
             <div class="col-lg-6 text-center">
             <h2>{{ $visitorInfo -> nom }}</h2>
             <p>
-                est un visiteur qui envoye leur cv !
+                est un condidature qui envoye leur cv !
             </p>
             </div>
         </div>
