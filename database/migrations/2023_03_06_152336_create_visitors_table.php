@@ -15,10 +15,13 @@ return new class extends Migration
             $table -> id();
             $table -> string('email');
             $table -> string('nom') ;
+            $table -> string('family_name') ;
             $table -> string('telephone') ;
             $table -> integer('annee_experience') ;
             $table -> string('titre') ;
             $table -> string('etudes') ;
+            $table -> string('jour') ;
+            $table -> string('heure') ;
             $table -> softDeletes() ;
             $table -> timestamps();
         });

@@ -6,6 +6,8 @@
     {{ $visitorInfo -> nom }}
 @endsection
 
+<link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
 @extends('master.lastDashboard.including')
 
 @section('content-dahboard')
@@ -16,9 +18,9 @@
         <div class="container position-relative">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-            <h2>{{ $visitorInfo -> nom }}</h2>
+            <h2>{{ $visitorInfo -> nom }} {{ $visitorInfo -> family_name }} </h2>
             <p>
-                est un condidature qui envoye leur cv !
+                est un condidature qui envoye son cv !
             </p>
             </div>
         </div>
@@ -40,6 +42,10 @@
                                 <input type="text" name="nom" class="form-control" value="{{ $visitorInfo -> nom }}" placeholder="Name" required readonly>
                             </div>
 
+                            <div class="col-md-12 mb-2">
+                                <input type="text" name="family_name" class="form-control" value="{{ $visitorInfo -> family_name }}" placeholder="Name" required readonly>
+                            </div>
+
                             <div class="col-md-12  mb-2">
                                 <input type="email" class="form-control" value="{{ $visitorInfo -> email }}" name="email" placeholder="E-mail" readonly>
                             </div>
@@ -47,26 +53,31 @@
                             <div class="col-md-12 mb-2">
                                 <input type="tel" class="form-control" value="{{ $visitorInfo -> telephone }}" name="tele" placeholder="Telephone" readonly>
                             </div>
-                        <div class="col-md-12  mb-2">
-                            <input type="number" class="form-control" value="{{ $visitorInfo -> annee_experience }}" name="annee_experience" placeholder="Annee experience" readonly>
-                        </div>
-                        <div class="col-md-12  mb-2">
-                            <input type="text" class="form-control" value="{{ $visitorInfo -> titre }}" name="poste" placeholder="Poste" readonly>
-                        </div>
-                        <div class="col-md-12  mb-2">
-                            <select name="etudes" class="form-control" style="padding: 10px 15px" readonly>
-                                <option selected> {{ $visitorInfo -> etudes }}</option>
-                            </select>
-                        </div>
-                        <div class="col-md-12  mb-2">
-                            <input type="text" class="form-control" value="{{ $cvs -> path }}" accept = ".pdf" name="cv" placeholder="file" readonly >
-                        </div>
 
-                        <div class="mt-5">
-                            <a href="{{ url('/download') }}/{{$visitorInfo -> nom}}/{{ $cvs -> path }}" class="btn btn-outline-success">Telecharger &nbsp; <i class="fa-solid fa-download"></i></a>
-                            <a href="{{ url('/show') }}/{{$visitorInfo -> nom}}/{{ $cvs -> path }}" class="btn btn-outline-primary">Visiter &nbsp; <i class="fa-solid fa-download"></i></a>
-                            {{-- public_path('visitors/' . $visitorName . '/' . $cvName) --}}
-                        </div>
+                            <div class="col-md-12  mb-2">
+                                <input type="number" class="form-control" value="{{ $visitorInfo -> annee_experience }}" name="annee_experience" placeholder="Annee experience" readonly>
+                            </div>
+
+
+                            <div class="col-md-12  mb-2">
+                                <input type="text" class="form-control" value="{{ $visitorInfo -> titre }}" name="poste" placeholder="Poste" readonly>
+                            </div>
+
+                            <div class="col-md-12  mb-2">
+                                <select name="etudes" class="form-control" style="padding: 10px 15px" readonly>
+                                    <option selected> {{ $visitorInfo -> etudes }}</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12  mb-2">
+                                <input type="text" class="form-control" value="{{ $cvs -> path }}" accept = ".pdf" name="cv" placeholder="file" readonly >
+                            </div>
+
+                            <div class="mt-5">
+                                <a href="{{ url('/download') }}/{{$visitorInfo -> nom}}/{{ $cvs -> path }}" class="btn btn-outline-success">Telecharger &nbsp; <i class="fa-solid fa-download"></i></a>
+                                <a href="{{ url('/show') }}/{{$visitorInfo -> nom}}/{{ $cvs -> path }}" class="btn btn-outline-primary">Visiter &nbsp; <i class="fa-solid fa-eye"></i></a>
+                            </div>
+                            
                         </div>
                     </form>
                 </div>

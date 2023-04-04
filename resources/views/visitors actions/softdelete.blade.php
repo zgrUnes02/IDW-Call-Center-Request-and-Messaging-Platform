@@ -5,6 +5,8 @@
     Les condidatures supprimer
 @endsection
 
+<link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
 @section('content-dahboard')
   <main id="main" class="main">
 
@@ -50,13 +52,15 @@
                     <th scope="col">Type</th>
                     <th scope="col">Etudes</th>
                     <th scope="col">Annee experience</th>
+                    <th scope="col">Jour</th>
+                    <th scope="col">Heure</th>
                     <th scope="col">Processe</th>
                   </tr>
                 </thead>
                 @if ($visitors -> count() == 0)
                     <tbody>
                         <tr>
-                            <td colspan="8">
+                            <td colspan="10">
                                 le tableu est vide !
                             </td>
                         </tr>
@@ -75,6 +79,8 @@
                         @else    
                             <td>{{ $visitor -> annee_experience }} Ans</td>
                         @endif
+                        <td>{{ $visitor -> jour }}</td>
+                        <td>{{ $visitor -> heure }}</td>
                         <td>
                             <a href="{{route('forceDeleteVisitor.visitor' , $visitor -> id)}}" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
                             <a href="{{route('restore.visitor' , $visitor -> id)}}" class="btn btn-outline-success"><i class="fa-solid fa-rotate-left"></i></a>

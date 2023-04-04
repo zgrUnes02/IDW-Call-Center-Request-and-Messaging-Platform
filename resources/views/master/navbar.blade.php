@@ -25,11 +25,9 @@
                 </li>
             </ul>
 
-            @if ( getHostByName(getHostName()) == '192.168.137.1')
-                <div class="row" style="margin-right: 20px">
-                    <a href="/login" class="col btn btn-outline-primary">Se connecter &nbsp; <i class="fa-solid fa-right-to-bracket"></i></a>
-                </div>
-            @endif
+            <div class="row" style="margin-right: 20px">
+                <a href="/login" class="col btn btn-outline-primary">Se connecter &nbsp; <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
             
         </div>
     </div>

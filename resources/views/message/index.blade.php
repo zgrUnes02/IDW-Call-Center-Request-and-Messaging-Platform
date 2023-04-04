@@ -5,6 +5,8 @@
     Les messages
 @endsection
 
+<link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
 {{--! ----------------------------------------- Throw error exemple  -------------------------------------- --}}
     <?php
         if($visitors -> count() >= 10)

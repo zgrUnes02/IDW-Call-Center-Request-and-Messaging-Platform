@@ -59,9 +59,9 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><img src="{{asset('/images/service2.jpeg')}}" class="img-fluid" alt=""></div>
-              <h4><a href="">Service de numérotation en masse</a></h4>
+              <h4><a href="">Formez et évaluez vos équipes de téléprospection</a></h4>
               <p>
-                Identifiez les zones d’insatisfaction et prenez en charge les remontées de vos clients : un client mécontent pris en charge est plus prescripteur qu’un client lambda.
+                Trouvez de nouveaux clients et optimisez vos campagnes de téléprospection .
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@
    
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg mt-5 mb-5">
+    {{-- <section id="team" class="team section-bg mt-5 mb-5">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -166,7 +166,7 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section><!-- End Team Section --> --}}
 
 </main>
 

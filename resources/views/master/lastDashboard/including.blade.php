@@ -7,6 +7,8 @@
 
   <title> @yield('title-2') </title>
 
+  <link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 

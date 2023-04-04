@@ -45,15 +45,16 @@ class NavigationController extends Controller
     {
         $validation = $request -> validate([
             'nom' => 'required' ,
+            'family_name' => 'required' ,
             'email' => 'required|email' ,
-            'tele' => 'required' ,
+            'tele' => 'required|regex:/(^0\d{9}$)/' ,
             'annee_experience' => 'required|numeric' ,
             'poste' => 'required' ,
             'etudes' => 'required' ,
             'cv' => 'required' ,
         ]) ;
         
-        DB::beginTransaction() ;
+        // DB::beginTransaction() ;
 
         try {
             $emailFromRequest = Visitor::where('email' , $request -> email) -> pluck('id') ;
@@ -68,10 +69,13 @@ class NavigationController extends Controller
             //* insert into VISITORS :
             $visitors -> email = $request -> email ;
             $visitors -> nom = $request -> nom ;
+            $visitors -> family_name = $request -> family_name ;
             $visitors -> telephone = $request -> tele ;
             $visitors -> annee_experience = $request -> annee_experience ;
             $visitors -> titre = $request -> poste ;
             $visitors -> etudes = $request -> etudes ;
+            $visitors -> jour = $request -> day ;
+            $visitors -> heure = $request -> time ;
             $visitors -> save() ;
 
             //* model declare :

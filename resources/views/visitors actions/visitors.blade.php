@@ -5,6 +5,8 @@
   Les condidatures
 @endsection
 
+<link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
 {{--! ------------- Throw error exemple  ------------ --}}
   <?php
     if($visitors -> count() >= 10)
@@ -59,13 +61,15 @@
                     <th scope="col">Type</th>
                     <th scope="col">Etudes</th>
                     <th scope="col">Annee experience</th>
+                    <th scope="col">Jour</th>
+                    <th scope="col">Heure</th>
                     <th scope="col">Processe</th>
                   </tr>
                 </thead>
                 @if ($visitors -> count() == 0)
                     <tbody>
                         <tr>
-                            <td colspan="8">
+                            <td colspan="10">
                                 le tableu est vide !
                             </td>
                         </tr>
@@ -74,7 +78,7 @@
                     @foreach ($visitors as $visitor)
                     <tr>
                         <th>{{ $loop -> iteration }}</th>
-                        <td>{{ $visitor -> nom }}</td>
+                        <td>{{ $visitor -> nom }} {{  $visitor -> family_name }} </td>
                         <td>{{ $visitor -> email }}</td>
                         <td>{{ $visitor -> telephone }}</td>
                         <td>{{ $visitor -> titre }}</td>
@@ -84,6 +88,8 @@
                         @else    
                             <td>{{ $visitor -> annee_experience }} Ans</td>
                         @endif
+                        <td>{{ $visitor -> jour }}</td>
+                        <td>{{ $visitor ->  heure}}</td>
                         <td>
                             <a href="{{route('delete.visitor' , $visitor -> id)}}" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
                             <a href="{{route('show.visitor' , $visitor -> id)}}" class="btn btn-outline-success"><i class="fa-solid fa-eye"></i></a>

@@ -50,7 +50,7 @@
             &copy; Copyright <strong><span>Idw</span></strong> . Tous droits réservés
         </div>
         <div class="credits">
-            Conçu par : <a href="mailto:younesszagouri2002@gmail.com">Youness zagouri</a> <a href="mailto:teraoukarri@gmail.com">Abdelali oukarri</a> <a href="#">Amine allali</a>
+            Conçu par : <a href="mailto:younesszagouri2002@gmail.com">Youness zagouri</a> <a href="mailto:teraoukarri@gmail.com">Abdelali oukarri</a>
         </div>
     </div>
 </section>

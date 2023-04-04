@@ -5,6 +5,8 @@
     Message du {{ $message -> nom }}
 @endsection
 
+<link rel="icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+
 @section('content-dahboard')
   <main id="main" class="main">
 
